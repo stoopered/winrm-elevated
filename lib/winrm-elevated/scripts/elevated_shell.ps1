@@ -1,6 +1,9 @@
-$username = '<%= username %>'
-$password = '<%= password %>'
-$script_file = '<%= script_path %>'
+[cmdletbinding()]            
+param (
+    [string]$username,
+    [string]$password,
+    [string]$script_file
+)
 
 $interactive = '<%= interactive_logon %>'
 $pass_to_use = $password
